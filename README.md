@@ -3,6 +3,8 @@
 ***
 Os proponemos un pequeño ejercicio para practicar la maquetación por componentes. En este caso hay un diseño básico preparado al que podéis acceder usando [Zeplin.io](https://zeplin.io), donde podréis comprobar medidas, colores, tipografías e incluso descargar las imágenes necesarias.
 
+![Diseño](screens/thumb.png)
+
 ### Zeplin
 Zeplin es una aplicación para poder compartir un diseño con  desarrolladores sin necesidad de que usen aplicaciones como Sketch, Illustrator o Photoshop y con mucha más información que unos pantallazos.
 
@@ -25,4 +27,8 @@ La URL del proyecto es [zpl.io/bWQljqM](zpl.io/bWQljqM)
 6. Añadidme al repo donde trabajéis que le pueda ir echando un ojo.
 7. Si tenéis dudas, preguntad.
 
-**<Felices fiestas />**
+> **NOTA:**  
+Tenéis los PNG de las diferentes vistas en la carpeta `screens` de este repositorio ;)
+
+
+**&lt;Felices fiestas /&gt;**
