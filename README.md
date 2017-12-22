@@ -12,7 +12,7 @@ Podéis ver un [pequeño tutorial en Youtube](https://www.youtube.com/watch?time
 
 Se puede acceder al diseño directamente desde el navegador para lo que necesitaréis una cuenta de zeplin (que se puede conseguir de forma gratuita desde su página).
 ***
-La URL del proyecto es [zpl.io/bWQljqM](zpl.io/bWQljqM)
+La URL del proyecto es [zpl.io/bWQljqM](https://zpl.io/bWQljqM)
 ***
 
 > **NOTA:**  
