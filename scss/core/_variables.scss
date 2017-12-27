@@ -14,8 +14,8 @@ $color-pagination-selected: #304268;
 
 // fonts
 
-
-$font-family: 'Roboto Slab', serif;
+$font-family-Roboto: 'Roboto', serif;
+$font-family-Slab: 'Roboto Slab', serif;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
@@ -47,3 +47,15 @@ $width-bg: 960px;
 $height-bg: 450px;
 $width-card: 630px;
 $height-card: 420px;
+
+// cards
+
+$width-sm-md: 210px;
+$width-lg: 230px;
+$height-sm-md-lg: 280px;
+
+// image cards
+
+$width-img: 210px;
+$width-img-lg: 230px;
+$height-img: 140px;

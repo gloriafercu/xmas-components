@@ -1,49 +1,105 @@
 .card {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 210px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.card .img-card {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: url("../images/group@3x.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no repeat;
-  width: 100%;
-  position: relative;
 }
 
-.card:before {
+.card .img-card:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 66.66667%;
 }
 
-.card > .img-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.card .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.card .description .title-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5px;
+  color: #304268;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: "Roboto Slab", serif;
+}
+
+.card .description .text-descript {
+  color: #4a4a4a;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .description .buy {
+  font-size: inherit;
+  color: #304268;
+  font-weight: 400;
+  width: 100%;
+  border: 2px solid #304268;
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 30px;
+  margin-bottom: 15px;
 }
 
 .bg-header {
-  background-image: url("../images/cover@3x.png");
+  background-image: url("../images/cover@2x.png");
   background-size: cover;
   background-position: center center;
-  background-repeat: no repeat;
-  position: relative;
+  background-repeat: no-repeat;
   width: 100%;
-}
-
-.bg-header:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 46.875%;
-}
-
-.bg-header > .cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 150px;
 }
 
 .breadcrumb {
@@ -72,7 +128,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", serif;
 }
 
 .site {
@@ -122,6 +178,7 @@
   font-size: 23px;
   line-height: 30px;
   color: #304268;
+  font-family: "Roboto Slab", serif;
 }
 
 .main-content {
@@ -142,6 +199,21 @@
   color: #304268;
   font-weight: 300;
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.components {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.components .card {
+  grid-column: span 12;
 }
 
 .pagination {
@@ -211,7 +283,12 @@ footer p .love {
   color: #304268;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
+  .bg-header {
+    height: 250px;
+    background-image: url("../images/cover@3x.png");
+  }
+
   .contain {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -224,12 +301,48 @@ footer p .love {
     color: #304268;
   }
 
+  .components {
+    margin: 20px auto;
+    max-width: 670px;
+    grid-gap: 20px;
+  }
+
+  .components .card {
+    grid-column: span 4;
+  }
+
+  .pagination {
+    width: 670px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   .list-pages .square {
     margin: 30px 3px 30px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1280px) {
+  .card {
+    width: 230px;
+  }
+
+  .card .img-card {
+    position: relative;
+  }
+
+  .card .img-card:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 60.86957%;
+  }
+
+  .bg-header {
+    height: 250px;
+    background-image: url("../images/cover@3x.png");
+  }
+
   .contain {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -240,6 +353,19 @@ footer p .love {
     font-size: 28px;
     line-height: 45px;
     color: #304268;
+  }
+
+  .main-content {
+    max-width: 490px;
+  }
+
+  .components {
+    grid-gap: 30px;
+    max-width: 1010px;
+  }
+
+  .components .card {
+    grid-column: span 3;
   }
 
   .list-pages .square {

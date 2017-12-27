@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: $font-family;
+  font-family: $font-family-Roboto;
 }
 
 .site {
@@ -18,11 +18,12 @@
   box-sizing: border-box;
   @include margin-contain($margin-contain-sm);
 
-  @media (min-width: 321px) and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     @include margin-contain($margin-contain-md);
   }
-  @media (min-width: 769px) {
+  @media (min-width: 1280px) {
     @include margin-contain($margin-contain-lg);
+
   }
 }
 .main-title {
@@ -30,11 +31,12 @@
   box-sizing: border-box;
   @include flexCentered();
   @include space($font-size-title-sm, $line-height-sm);
+  font-family: $font-family-Slab;
 
-  @media (min-width: 321px) and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1279px) {
     @include space($font-size-title-md, $line-height-md);
   }
-  @media (min-width: 769px) {
+  @media (min-width: 1280px) {
     @include space($font-size-title-lg, $line-height-lg);
   }
 }
@@ -46,11 +48,11 @@
   @include space($font-size, $line-height);
   font-weight: $font-weight-light;
   margin-bottom: 30px;
-  // // @media (min-width: 321px) and (max-width: 768px) {
-  // //   padding: 0 115px;
-  // // }
-  // // @media (min-width: 769px) {
-  // //   padding: 0 260px;
-  // }
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  @media (min-width: 1280px) {
+    max-width: 490px;
+  }
 
 }

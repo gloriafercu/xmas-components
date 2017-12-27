@@ -1,8 +1,67 @@
+
+
 .card {
-  background-image: url($pathImages + 'group@3x.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no repeat;
-  width: 100%;
-  @include aspect-ratio-card ($width-card, $height-card);
+  box-sizing: border-box;
+  // margin: 30px 0;
+  font-size: $font-size;
+  font-weight: $font-weight-regular;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  @include flexCentered();
+  flex-direction: column;
+  justify-content: space-between;
+  width: $width-sm-md;
+  height: $height-sm-md-lg;
+  margin:0 auto;
+  @media (min-width: 1280px) {
+    width: 230px;
+  }
+
+  .img-card {
+    @include aspect-ratio(210, 140);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url($pathImages + 'group@3x.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no repeat;
+    @media (min-width: 1280px) {
+      @include aspect-ratio(230, 140);
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: $font-size;
+    padding: 0 15px;
+
+    .title-img {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      color: $font-color-dark-primary;
+      font-weight: $font-weight-bold;
+      line-height: $line-height-sm;
+      font-family: $font-family-Slab;
+    }
+    .text-descript {
+      color: $font-color-dark-secondary;
+      font-weight: $font-weight-regular;
+      margin-bottom: 15px;
+    }
+    .buy {
+      font-size: inherit;
+      color: $font-color-dark-primary;
+      font-weight: $font-weight-regular;
+      width: 100%;
+      border: 2px solid $color-border-button;
+      background-color: $color-light-text;
+      border-radius: 15px;
+      height: 30px;
+      margin-bottom: 15px;
+    }
+
+  }
+
 }
