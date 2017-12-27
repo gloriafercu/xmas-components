@@ -13,6 +13,44 @@
   flex: 1 0 auto;
 }
 .contain {
-  margin: $margin-contain;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+  @include margin-contain($margin-contain-sm);
+
+  @media (min-width: 321px) and (max-width: 768px) {
+    @include margin-contain($margin-contain-md);
+  }
+  @media (min-width: 769px) {
+    @include margin-contain($margin-contain-lg);
+  }
+}
+.main-title {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  @include flexCentered();
+  @include space($font-size-title-sm, $line-height-sm);
+
+  @media (min-width: 321px) and (max-width: 768px) {
+    @include space($font-size-title-md, $line-height-md);
+  }
+  @media (min-width: 769px) {
+    @include space($font-size-title-lg, $line-height-lg);
+  }
+}
+
+.main-content {
+  text-align: center;
+  box-sizing: border-box;
+  @include flexCentered();
+  @include space($font-size, $line-height);
+  font-weight: $font-weight-light;
+  margin-bottom: 30px;
+  // // @media (min-width: 321px) and (max-width: 768px) {
+  // //   padding: 0 115px;
+  // // }
+  // // @media (min-width: 769px) {
+  // //   padding: 0 260px;
+  // }
+
 }

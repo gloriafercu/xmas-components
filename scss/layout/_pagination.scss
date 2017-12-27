@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+}
+.list-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 100%;
+  .square {
+    @include flexCentered();
+    width: 32px;
+    height: 32px;
+    font-size: $font-size;
+    font-weight: $font-weight-regular;
+    background-color: $color-pagination;
+    margin: 45px 3px 45px;
+    @media (min-width: 321px) and (max-width: 768px) {
+    margin: 30px 3px 30px;
+    }
+    @media (min-width: 769px) {
+    margin: 30px 3px 30px;
+    }
+    &.selected {
+      background-color: $color-pagination-selected;
+      color: $color-light-text;
+    }
+  }
+}
