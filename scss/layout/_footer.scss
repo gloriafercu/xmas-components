@@ -1,0 +1,12 @@
+footer {
+  @include flexCentered();
+  height: 60px;
+  background-color: $color-medium-background;
+  p {
+    font-size: $font-size;
+    font-weight: $font-weight-regular;
+    .love {
+      color: $color-dark-primary;
+    }
+  }
+}

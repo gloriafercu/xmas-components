@@ -1,0 +1,41 @@
+// colors
+
+
+$color-dark-primary: #304268;
+$color-dark-secondary: #4a4a4a;
+$color-light-text: #ffffff;
+$color-medium-background: #dddddd;
+$color-dark-background: $color-dark-primary;
+$color-border-button: $color-dark-primary;
+$color-shadow: rgba(0,0,0,0.2);
+
+
+
+// fonts
+
+
+$font-family: 'Roboto Slab', serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-color-dark-primary: $color-dark-primary;
+$font-color-dark-secondary: $color-dark-secondary;
+$font-size: 14px;
+$font-size-title-sm: 23px;
+$font-size-title-md: 28px;
+$font-size-title-lg: 28px;
+
+
+$line-height: 30px;
+
+// images
+
+$pathImages: '../images/';
+$width-bg: 960px;
+$height-bg: 450px;
+$width-card: 630px;
+$height-card: 420px;
+
+// margins
+
+$margin-contain: 0 30px;

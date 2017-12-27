@@ -1,0 +1,38 @@
+@mixin aspect-ratio-bg ($width-bg, $height-bg) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height-bg / $width-bg) * 100%;
+  }
+  > .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@mixin aspect-ratio-card ($width-card, $height-card) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height-card / $width-card) * 100%;
+  }
+  > .img-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin flexCentered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
