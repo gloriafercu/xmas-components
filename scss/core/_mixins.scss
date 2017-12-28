@@ -8,18 +8,8 @@
   }
 }
 
-
 @mixin flexCentered() {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@mixin margin-contain($margin-contain-sm) {
-  box-sizing: border-box;
-  margin: $margin-contain-sm;
-}
-@mixin space($font-size-title-sm, $line-height-sm) {
-    font-size: $font-size-title-sm;
-    line-height: $line-height-sm;
-    color: $font-color-dark-primary;
 }

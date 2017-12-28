@@ -7,7 +7,6 @@ $color-light-text: #ffffff;
 $color-medium-background: #dddddd;
 $color-dark-background: $color-dark-primary;
 $color-border-button: $color-dark-primary;
-$color-shadow: rgba(0,0,0,0.2);
 $color-pagination: #d8d8d8;
 $color-pagination-selected: #304268;
 
@@ -23,18 +22,18 @@ $font-color-dark-primary: $color-dark-primary;
 $font-color-dark-secondary: $color-dark-secondary;
 $font-size: 14px;
 $font-size-title-sm: 23px;
-$font-size-title-md: 28px;
-$font-size-title-lg: 28px;
+$font-size-title-md-lg: 28px;
+
 
 
 // line-height
 
 $line-height: 20px;
 $line-height-sm: 30px;
-$line-height-md: 45px;
-$line-height-lg: 45px;
+$line-height-md-lg: 45px;
 
-// margins
+
+// margins contain
 
 $margin-contain-sm: 0 30px;
 $margin-contain-md: 0 49px;
@@ -43,16 +42,12 @@ $margin-contain-lg: 0 135px;
 // images
 
 $pathImages: '../images/';
-$width-bg: 960px;
-$height-bg: 450px;
-$width-card: 630px;
-$height-card: 420px;
 
 // cards
 
-$width-sm-md: 210px;
+$width: 210px;
 $width-lg: 230px;
-$height-sm-md-lg: 280px;
+$height: 280px;
 
 // image cards
 

@@ -20,13 +20,13 @@
     font-size: $font-size;
     font-weight: $font-weight-regular;
     background-color: $color-pagination;
-    margin: 45px 3px 45px;
+    margin: 45px 0 45px 3px;
 
     @media (min-width: 768px) and (max-width: 1279px) {
-        margin: 30px 3px 30px;
+        margin: 30px 0 30px 3px;
     }
     @media (min-width: 1280px) {
-    margin: 30px 3px 30px;
+    margin: 30px 0 30px 3px;
     }
     &.selected {
       background-color: $color-pagination-selected;

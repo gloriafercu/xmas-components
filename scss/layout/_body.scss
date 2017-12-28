@@ -16,13 +16,13 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  @include margin-contain($margin-contain-sm);
+  margin: $margin-contain-sm;
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    @include margin-contain($margin-contain-md);
+    margin: $margin-contain-md;
   }
   @media (min-width: 1280px) {
-    @include margin-contain($margin-contain-lg);
+    margin: $margin-contain-lg;
 
   }
 }
@@ -30,14 +30,19 @@
   margin-bottom: 15px;
   box-sizing: border-box;
   @include flexCentered();
-  @include space($font-size-title-sm, $line-height-sm);
+  font-size: $font-size-title-sm;
+  line-height: $line-height-sm;
+  font-weight: $font-weight-bold;
   font-family: $font-family-Slab;
+  color: $font-color-dark-primary;
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    @include space($font-size-title-md, $line-height-md);
+    font-size: $font-size-title-md-lg;
+    line-height: $line-height-md-lg;
   }
   @media (min-width: 1280px) {
-    @include space($font-size-title-lg, $line-height-lg);
+    font-size: $font-size-title-md-lg;
+    line-height: $line-height-md-lg;
   }
 }
 
@@ -45,14 +50,14 @@
   text-align: center;
   box-sizing: border-box;
   @include flexCentered();
-  @include space($font-size, $line-height);
+  font-size: $font-size;
+  line-height: $line-height;
   font-weight: $font-weight-light;
-  margin-bottom: 30px;
+  color: $font-color-dark-primary;
   width: 100%;
   max-width: 440px;
   margin: 0 auto;
   @media (min-width: 1280px) {
     max-width: 490px;
   }
-
 }
