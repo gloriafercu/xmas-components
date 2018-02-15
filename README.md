@@ -1,5 +1,5 @@
 # Xmas components
-## Ejercicio de maquetación por componentes para navidad
+## Ejercicio de maquetación por componentes 
 ***
 Os proponemos un pequeño ejercicio para practicar la maquetación por componentes. En este caso hay un diseño básico preparado al que podéis acceder usando [Zeplin.io](https://zeplin.io), donde podréis comprobar medidas, colores, tipografías e incluso descargar las imágenes necesarias.
 
